@@ -1,6 +1,8 @@
 <div class="container">
     <h1>{{title}}</h1>
-    <p>Este software web é desenvolvido utilizando Angular.</p>
-    <br>
-    <img src="assets/images/angular.svg" width="200">
+    <p>Os Vingadores (Avengers no original em inglês) são um grupo de super-heróis de história em quadrinhos publicados nos Estados Unidos pela editora Marvel Comics. O grupo também aparece em adaptações da Marvel para cinema, desenho animado e videogames. (Wikipedia)</p>
+    <p>Alguns membros da formação atual:</p>
+    <ul>
+        <li *ngFor="let vingador of vingadores">{{vingador}}</li>
+    </ul>
 </div>
