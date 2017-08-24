@@ -4,6 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HeroiComponent } from './heroi/heroi.component';
 
 @NgModule({
     imports: [
@@ -15,6 +16,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ],
     declarations: [
         AppComponent,
+        HeroiComponent,
     ],
     providers: [
     ],
