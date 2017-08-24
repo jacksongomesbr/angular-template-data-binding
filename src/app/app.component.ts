@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Vingador } from './vingador';
 import '../assets/css/style.css';
 
 @Component({
@@ -9,16 +9,16 @@ import '../assets/css/style.css';
 })
 export class AppComponent implements OnInit {
     title: string;
-    vingadores: any;
+    vingadores: Array<Vingador>;
 
     constructor() {
         this.title = 'Vingadores';
         this.vingadores = [
-            'Capitão América (Steve Rogers)',
-            'Viúva Negra (Natasha Romanoff)',
-            'Ms. Marvel (Carol Danvers)',
-            'Deadpool (Wade Wilson)',
-            'Gavião Arqueiro (Clint Barton)'
+            new Vingador(1, 'Capitão América', 'Steve Rogers'),
+            new Vingador(2, 'Viúva Negra', 'Natasha Romanoff'),
+            new Vingador(3, 'Ms. Marvel', 'Carol Danvers'),
+            new Vingador(4, 'Deadpool', 'Wade Wilson'),
+            new Vingador(5, 'Gavião Arqueiro', 'Clint Barton')
         ];
     }
 
